@@ -1,0 +1,28 @@
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(16, 16, 20);
+    overflow: hidden;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-right: 16px solid rgba(255, 145, 0, 0.87); 
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s ease infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
+

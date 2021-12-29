@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/6bfbc87053.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <script src="js/switch.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyarchive</title>
+</head>
+<body>
+    <header class="topBar drag">
+        <div class="title-container">
+            <div class="titleBar">
+                <button id="logo-btn"><img src="images/logo.svg" alt="" width="20px"></button>
+                <div class="title">
+                    Polyarchive
+                </div>
+            </div>
+            <div class="titleBarBtns no-drag" style="display: flex; align-items: center;">
+                <button id="minimizeBtn" class="topBtn minimizeBtn"><span class="material-icons">minimize</span></button>
+                <button id="maximizeBtn" class="topBtn maximizeBtn"><span class="material-icons">web_asset</span></button>
+                <button id="closeBtn" class="topBtn closeBtn"><span class="material-icons">close</span></button>
+                </button>
+            </div>
+        </div> 
+    </header>        
+    </div>
+    <div class="sidebar no-drag below-content">
+        <span class="top-content">
+            <a href="" class="logo"><img src="images/logo.svg" alt="" width="35px"></a>
+        </span>
+        <span class="links">
+            <div id="icon" onclick="aboutSwitch()">
+                <p class="far fa-question-circle"></p>
+                <p href="">About</p>
+            </div>
+            <div id="icon" onclick="wikiSwitch()">
+                <p class="fas fa-book"></p>
+                <p href="">Wiki</p>
+            </div>
+            <div id="icon">
+                <p class="fas fa-search"></p>
+                <p href="">Search</p>
+            </div>
+            <div id="icon">
+                <p class="fab fa-github"></p>
+                <p href="">Github</p>
+            </div>
+        </span>
+    </div>
+    <main class="no-drag below-content">
+        <div class="middle-box">
+            <header class="main-header">
+                <span class="container">
+                    <p>Welcome!</p>
+                    <form action="search" class="search">
+                        <button><i class="fas fa-search searchIcon"></i></button>
+                        <input type="search" class="searchBar" placeholder="Search the archives...">
+                    </form>
+                </span>    
+            </header>
+            <div id="wiki">
+                <div class="banner">
+                    <img src="images/logo_full.svg" alt="logo" width="290px" class="logo-full">
+                </div>
+                <div class="bottom-cont">
+                    <h3>Check out some of the articles</h3>
+                    <div class="card-container">
+                        <button class="card card-m">
+                            <h4>The Bus</h4>
+                            <p>Welcome to a completetly normal bus.</p>
+                        </button>
+                        <button class="card card-m">
+                            <h4>Chain Chomper</h4>
+                            <p>An entity in the dbtc universe.</p>
+                        </button>
+                        <button class="card">
+                            <h4>OS Invasion</h4>
+                            <p>During 2021, an trend of being an OS emerged.</p>
+                        </button>
+                        
+                    </div>
+                    <h3>Check out some of the authors</h3> 
+                    <div class="author-container" style="display: flex; align-items: center;">
+                        <p style="color: rgb(88, 88, 88);">The authors are in another castle...</p>
+                        <p style="color: rgb(88, 88, 88); margin-left: 1rem;" class="fab fa-fort-awesome"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-page" style="display: none;">
+                <div class="about-container">
+                    <h3>What is polyarchive?</h3>
+                    <p class="desc">Polyarchive is an archive of the interactive lore of a discord 
+                    server known as new polynomers country, this is made as a small little project <br> since ive not seen anyone make this yet. </p>
+                    <h3>QnA</h3>
+                    <p>Q: How do you submit a wiki article?</p>
+                    <p>A: Join the polyarchive <a href="">discord</a> server and submit it as a .md file in the #wiki-subimmissions channel and i will look through it.</p>
+                    <br>
+                    <p>Q: Will you make a mobile version?</p>
+                    <p>A: Probably not.</p>
+                    <br>
+                    <p>Q: Why did you make this?</p>
+                    <p>A: Because why not lol</p>
+                    <br>
+                    <p>A: You can clean up my shitty code by submitting a <a href="">pull request</a> on the github page</p>
+                </div>
+            </div>
+            <div id="article-page">
+                <header class="author-metabar"></header>
+                <div class="article-container">
+                   
+                </div>
+            </div>
+            <!-- <div id="article-not-found" style="color: rgb(88, 88, 88);">
+                <h3 >Your article was not found.</h3>
+                <i class="fas fa-sad-tear"></i>
+            </div> -->
+        </div>
+    </main>
+</body>
+</html>

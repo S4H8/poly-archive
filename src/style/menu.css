@@ -1,0 +1,47 @@
+.topBar {
+    display: flex;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 40px;
+    user-select: none;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    justify-content: space-between;
+}
+
+.titleBar {
+    display: flex;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.topBtn {
+    color: white;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.topBtn .material-icons {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.topBtn:hover {
+    background-color: rgba(255, 145, 0, 0.87);
+}
+
